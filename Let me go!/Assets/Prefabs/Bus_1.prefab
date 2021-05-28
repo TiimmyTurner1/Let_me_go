@@ -293,8 +293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fd40555cc50a343bc7878f284e62df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyOne: 115
-  keyTwo: 119
+  Sound: {fileID: 0}
+  keyOne: 119
+  keyTwo: 115
   keyStop: 32
   moveDirection: {x: 0, y: 0, z: 0.5}
 --- !u!54 &4216891175943685765

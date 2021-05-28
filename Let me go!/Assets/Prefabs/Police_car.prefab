@@ -147,8 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fd40555cc50a343bc7878f284e62df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyOne: 115
-  keyTwo: 119
+  Sound: {fileID: 0}
+  keyOne: 119
+  keyTwo: 115
   keyStop: 32
   moveDirection: {x: 0, y: 0, z: 0.5}
 --- !u!65 &-7958945965079204765
@@ -162,8 +163,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.70075876, z: 2.3865256}
-  m_Center: {x: -8.9853255e-18, y: 0.40171692, z: -0.00064635277}
+  m_Size: {x: 1, y: 0.70044506, z: 2.3865256}
+  m_Center: {x: -8.9853255e-18, y: 0.40187377, z: -0.00064635277}
 --- !u!1 &8157507933191993484
 GameObject:
   m_ObjectHideFlags: 0

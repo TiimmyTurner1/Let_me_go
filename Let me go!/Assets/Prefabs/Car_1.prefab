@@ -389,7 +389,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 118
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &2956644284148004874
 MonoBehaviour:
@@ -403,8 +403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fd40555cc50a343bc7878f284e62df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyOne: 115
-  keyTwo: 119
+  Sound: {fileID: 0}
+  keyOne: 119
+  keyTwo: 115
   keyStop: 32
   moveDirection: {x: 0, y: 0, z: 0.5}
 --- !u!1 &7205684566507561703
