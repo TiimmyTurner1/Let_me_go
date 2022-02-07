@@ -1,17 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
-using UnityEngine.SceneManagement; 
-using UnityEngine.Audio; 
+using UnityEngine.UI;
 
 public class Options : MonoBehaviour
 {
-    public Slider SliderVolume;
-    public Toggle LowGraphic;
-    public Toggle MediumGraphic;
-    public Toggle HighGraphic;
-    public bool isFullScreen;
+    [SerializeField] private Slider SliderVolume;
+    [SerializeField] private Toggle LowGraphic;
+    [SerializeField] private Toggle MediumGraphic;
+    [SerializeField] private Toggle HighGraphic;
+    [SerializeField] private bool isFullScreen;
 
     public void FullScreenToggle()
     {
@@ -31,7 +27,5 @@ public class Options : MonoBehaviour
             QualitySettings.SetQualityLevel(2);
         if (HighGraphic.isOn)
             QualitySettings.SetQualityLevel(3);
-
     }
-   
 }

@@ -1,22 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
     public static string SavedLevels;
-    public int countUnlockedLevels;    
+    public int countUnlockedLevels;
 
-    [SerializeField]
-    Sprite unlockedIcon;
+    [SerializeField] private Sprite unlockedIcon;
 
-    [SerializeField]
-    Sprite lockedIcon;
+    [SerializeField] private Sprite lockedIcon;
 
     private void Start()
-    {        
+    {
         SavedLevels = PlayerPrefs.GetString("SavedLevels");
+
         if (string.IsNullOrEmpty(SavedLevels))
         {
             for (int i = 0; i < transform.childCount; i++)
@@ -46,6 +43,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             countUnlockedLevels = int.Parse(SavedLevels);
+
             for (int i = 0; i < transform.childCount; i++)
             {
                 int numLvl = i + 1;
@@ -70,9 +68,5 @@ public class LevelManager : MonoBehaviour
                 }
             }
         }
-        
     }
-
-    
-
 }
